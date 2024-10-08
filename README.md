@@ -28,13 +28,13 @@ Joe Armstrong - Programming Erlang, Second Edition
 
 
 # Изученные в ходе написания эссе статьи:
-https://ru.wikipedia.org/wiki/Guile
-https://www.gnu.org/software/guile/
-https://spritely.institute/static/papers/scheme-primer.html#scheme-in-scheme
-https://ru.wikipedia.org/wiki/OCaml
-https://ru.wikipedia.org/wiki/Erlang
-https://stackshare.io/stackups/clojure-vs-erlang
-https://www.erlang.org/faq/getting_started
-https://en.wikipedia.org/wiki/Lisp_(programming_language)
-https://ru.wikipedia.org/wiki/Haskell
-https://ru.wikipedia.org/wiki/Agda
+* https://ru.wikipedia.org/wiki/Guile
+* https://www.gnu.org/software/guile/
+* https://spritely.institute/static/papers/scheme-primer.html#scheme-in-scheme
+* https://ru.wikipedia.org/wiki/OCaml
+* https://ru.wikipedia.org/wiki/Erlang
+* https://stackshare.io/stackups/clojure-vs-erlang
+* https://www.erlang.org/faq/getting_started
+* https://en.wikipedia.org/wiki/Lisp_(programming_language)
+* https://ru.wikipedia.org/wiki/Haskell
+* https://ru.wikipedia.org/wiki/Agda
