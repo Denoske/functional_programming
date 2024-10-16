@@ -1,17 +1,23 @@
 -module(main).
--export([main/0,get_names/0,score/1,char_to_int/1]).
+-export([main/1]).
 
-main() ->
-  Names = get_names(),
-  lists:sum([score(Name) * (I + 1) || {I, Name} <- lists:zip(lists:seq(1, length(Names)), Names)]).
+main(File) ->
+    {ok, Binary} = file:read_file(File),
+    NamesString = binary_to_list(Binary),
+    NamesList = string:tokens(NamesString, "\","),
+    SortedNames = lists:sort(NamesList),
+    ScoreTotal = calculate_total_score(SortedNames, 1),
+    ScoreTotal.
 
-get_names() ->
-  File = "names.txt",
-  {ok, Data} = file:read_file(File),
-  [Name || Name <- string:split(binary_to_list(Data), ",")].
+calculate_total_score([], _) -> 0;
+calculate_total_score([Name | Rest], Index) ->
+    NameScore = calculate_name_score(Name),
+    Points = Index * NameScore,
+    Points + calculate_total_score(Rest, Index + 1).
 
-score(Name) ->
-  lists:sum([char_to_int(C) - 96 || C <- Name]).
+calculate_name_score(Name) ->
+    lists:sum([char_to_int(C) || C <- Name]).
+
 
 char_to_int(C) ->
     case C of
