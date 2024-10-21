@@ -2,7 +2,7 @@
 -export([find_final_score/0]).
 
 find_final_score() ->
-    {ok, Binary} = file:read_file("names.txt"),
+    {ok, Binary} = file:read_file("src/euler_22/names.txt"),
     Names = format_names(binary_to_list(Binary)),
     SortedNames = quicksort(Names),
     Scores = calculate_scores(SortedNames),
