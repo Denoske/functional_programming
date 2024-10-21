@@ -1,4 +1,4 @@
--module(main).
+-module(euler22_recursion).
 -export([find_final_score/0]).
 
 find_final_score() ->
