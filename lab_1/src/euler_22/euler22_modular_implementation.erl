@@ -1,4 +1,4 @@
--module(euler22_modular).
+-module(euler22_modular_implementation).
 -export([find_final_score/0]).
 
 find_final_score() ->
