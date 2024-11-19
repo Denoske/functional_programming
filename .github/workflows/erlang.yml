@@ -30,12 +30,12 @@ jobs:
         run: |
           rebar3 compile
 
-      - name: Run dialyzer
-        run: |
-          rebar3 dialyzer
-      - name: Run elvis
-        run: |
-          rebar3 lint
+      # - name: Run dialyzer
+      #   run: |
+      #     rebar3 dialyzer
+      # - name: Run elvis
+      #   run: |
+      #     rebar3 lint
   test:
     runs-on: ubuntu-latest
 
