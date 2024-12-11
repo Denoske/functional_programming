@@ -1,5 +1,5 @@
 -module(lab2_app).
--include_lib("sc_set.erl").
+-include_lib("src/sc_set.erl").
 -include_lib("eunit/include/eunit.hrl").
 -include_lib("proper/include/proper.hrl").
 
