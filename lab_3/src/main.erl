@@ -1,5 +1,5 @@
 -module(main).
--author("adivanced").
+-author("denoske").
 
 
 -export([start/0, parse_initial_values/0, strings_to_atoms/1, spawn_processes/1]).
