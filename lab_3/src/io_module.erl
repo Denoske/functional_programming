@@ -8,17 +8,14 @@ start_input() ->
   input_loop().
 
 input_loop() ->
-  receive
-  after 100 ->
-    io:fwrite("\nInput coords (X Y): "),
-    case parse_points(string:trim(io:get_line(""))) of
-      {ok, [X, Y]} ->
-        interpolationpid ! {interpolate, [X, Y]},
-        input_loop();
-      {error, _} ->
-        io:fwrite("Incorrect input. Format: X Y\n"),
-        input_loop()
-    end
+  io:fwrite("\nInput coords (X Y): "),
+  case parse_points(string:trim(io:get_line(""))) of
+    {ok, [X, Y]} ->
+      interpolationpid ! {interpolate, [X, Y]},
+      input_loop();
+    {error, _} ->
+      io:fwrite("Incorrect input. Format: X Y\n"),
+      input_loop()
   end.
 
 parse_points(Line) ->
