@@ -1,5 +1,5 @@
 -module(io_module).
--author("adivanced").
+-author("denoske").
 
 %% API
 -export([start_input/0, start_output/0]).
