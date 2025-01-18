@@ -1,5 +1,5 @@
 -module(linear_interpolation).
--author("adivanced").
+-author("denoske").
 
 
 -export([start_linear/2, linear_loop/3, linear_interpolation/2]).
