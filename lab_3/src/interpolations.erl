@@ -1,5 +1,5 @@
 -module(interpolations).
--author("adivanced").
+-author("denoske").
 
 %% API
 -export([start/1, init/1, interpolation_loop/2, points_generator/3]).
