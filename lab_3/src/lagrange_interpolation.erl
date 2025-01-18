@@ -1,5 +1,5 @@
 -module(lagrange_interpolation).
--author("adivanced").
+-author("denoske").
 
 %% API
 -export([
